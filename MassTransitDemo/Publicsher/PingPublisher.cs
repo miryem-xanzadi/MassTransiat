@@ -29,11 +29,8 @@ namespace MassTransitDemo.Publisher
                     if (keyPressed.Key != ConsoleKey.Escape)
                     {
                         _logger.LogInformation($"Pressed {keyPressed.Key}");
-                        await _bus.Publish(new Ping 
-                        { 
-                            Button =keyPressed.Key.ToString()
-                        });
 
+                        await _bus.Publish(new Ping { Button = keyPressed.Key.ToString(), Title = "Test" });
                     }
                     else
                     {

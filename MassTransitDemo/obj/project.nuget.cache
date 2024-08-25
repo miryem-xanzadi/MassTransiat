@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "GTO+AF+43BCYGPgqz0Z0apyhsGFW/qapN8aRksz70EaLJ4ZmVd0sLMMAXOvGCDcPxcMQyeWyJaYM1a7Zn/Xevg==",
+  "dgSpecHash": "kyNblGc6mFeKOVn+JBGcmI7PNCxKIBV1t3ETCnOtpABFl2ETLi5zb1IH5SkFxMlNN8OXU9k/XyAkHM0EZJFyKQ==",
   "success": true,
   "projectFilePath": "E:\\Mass Transiat\\MassTransitDemo\\MassTransitDemo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\asema\\.nuget\\packages\\confluent.kafka\\2.5.2\\confluent.kafka.2.5.2.nupkg.sha512",
+    "C:\\Users\\asema\\.nuget\\packages\\librdkafka.redist\\2.5.0\\librdkafka.redist.2.5.0.nupkg.sha512",
     "C:\\Users\\asema\\.nuget\\packages\\masstransit\\8.2.5\\masstransit.8.2.5.nupkg.sha512",
     "C:\\Users\\asema\\.nuget\\packages\\masstransit.abstractions\\8.2.5\\masstransit.abstractions.8.2.5.nupkg.sha512",
+    "C:\\Users\\asema\\.nuget\\packages\\masstransit.kafka\\8.2.5\\masstransit.kafka.8.2.5.nupkg.sha512",
+    "C:\\Users\\asema\\.nuget\\packages\\masstransit.rabbitmq\\8.2.5\\masstransit.rabbitmq.8.2.5.nupkg.sha512",
     "C:\\Users\\asema\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\asema\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\asema\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks\\6.0.1\\microsoft.extensions.diagnostics.healthchecks.6.0.1.nupkg.sha512",
@@ -15,7 +19,10 @@
     "C:\\Users\\asema\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\asema\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\asema\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "C:\\Users\\asema\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\asema\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
+    "C:\\Users\\asema\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\asema\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\asema\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -17,9 +17,10 @@ namespace MassTransitDemo.Consumer
 
             if (ping != null) 
             {
-                var button = context.Message.Button;
-                var title = context.Message.Title;
+                var button = ping.Button;
+                var title = ping.Title;
                 _logger.LogInformation($"Button pressed {button}, title: {title}");
+                return Task.CompletedTask;
 
             }
             

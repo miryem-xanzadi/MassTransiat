@@ -1,19 +1,38 @@
 ﻿using MassTransit;
+using MassTransitDemo.Consumer;
 using MassTransitDemo.Publisher;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
-var builder = WebApplication.CreateBuilder();
+var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddHostedService<PingPublisher>();
+// Load configuration from appsettings.json
+builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
-builder.Services.AddMassTransit(opt =>
+// Retrieve RabbitMQ settings from configuration
+var rabbitMqSettings = builder.Configuration.GetSection("EventBus");
+
+// Configure MassTransit
+builder.Services.AddMassTransit(x =>
 {
-    opt.AddConsumers(typeof(Program).Assembly);
-    opt.UsingInMemory ((context, cfg) =>
+    x.AddConsumer<PingConsumer>();
+
+    // Configure RabbitMQ
+    x.UsingRabbitMq((context, cfg) =>
     {
+        cfg.Host(rabbitMqSettings["host"], "/", h =>
+        {
+            h.Username(rabbitMqSettings["user"]);
+            h.Password(rabbitMqSettings["pass"]);
+        });
+
         cfg.ConfigureEndpoints(context);
+
+        
     });
 });
 
-var app  = builder.Build();
+builder.Services.AddHostedService<PingPublisher>();
 
+var app = builder.Build();
 app.Run();
